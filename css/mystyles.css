@@ -1,0 +1,143 @@
+#about {
+    /* Your existing CSS styles for the "About" section */
+
+    /* Add the gradient background */
+    background: linear-gradient(to bottom, #4CAF50, #2196F3); /* Change the colors as needed */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff; /* Set text color to white for better visibility */
+}
+
+#mycert{
+    width: 75%;
+    
+}
+
+#project-images{
+    height: 550px;
+    width: 100%;
+}
+
+.project-img{
+    height: 450px;
+}
+
+.carousel-item img {
+    height: auto;
+}
+
+.carousel-fade .carousel-item {
+    transition: opacity 1s ease-in-out; /* Longer duration and ease-in-out easing */
+}
+/* Change the color of carousel control buttons to white */
+.carousel-control-prev,
+.carousel-control-next {
+    color: rgb(0, 0, 0);
+}
+
+/* Change the color of carousel control icons to white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: rgb(0, 0, 0);
+}
+
+/* Change the color of carousel control buttons and icons on hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: black; /* Change the hover text color to black */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+/* Add a square black background behind the control buttons */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem; /* Adjust the square width */
+    height: 2rem; /* Adjust the square height */
+    background-color: black; /* Add a black background */
+    border-radius: 3px; /* Add rounded corners to the square */
+    z-index: -1;
+}
+
+/* Change the color of carousel control icons to white */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    color: white; /* Change the icon color to white */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+/* Change the color of carousel control buttons and icons on hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.8;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #333; /* Change the background color to dark gray */
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-indicators [data-bs-target] {
+        transition: none;
+    }
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
